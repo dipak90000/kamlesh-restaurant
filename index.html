@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KAMLESH Restaurant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fcfcfc;
+    }
+    nav {
+      background: #9fc559;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: rgb(22, 19, 19);
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .menu-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .menu-item {
+      width: 30%;
+      min-width: 250px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+    .menu-item:hover {
+      transform: translateY(-10px);
+    }
+    .menu-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .menu-item h3 {
+      margin: 15px 0 10px;
+      font-size: 1.5rem;
+      color: #333;
+    }
+    .menu-item p {
+      margin: 0 15px 15px;
+      color: #666;
+      font-size: 1rem;
+    }
+    .menu-item p:last-child {
+      color: #333;
+      font-weight: bold;
+    }
+    .reservation-form input, .reservation-form textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .reservation-form button {
+      padding: 10px 20px;
+      background: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header style="background-image: url('https://media.istockphoto.com/id/1054319798/photo/group-of-happy-friends-having-breakfast-in-the-restaurant.jpg?s=612x612&w=0&k=20&c=rdb2gaIzr5n2eZthvK1B73LQa3yapubVD2AM_-SF50o='); background-size: cover; background-position: center; padding: 100px 20px; text-align: center;">
+    <h1 style="font-size: 3rem; margin: 0; color: beige; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">WELCOME TO KAMLESH RESTAURANT</h1>
+    <p style="color: beige; font-size: 1.5rem;">Where Flavor Meets Comfort</p>
+    <a href="#menu"><button style="padding: 10px 20px; background: #6e1a1a; color: rgb(204, 198, 198); border: black; border-radius: 5px; cursor: pointer;">View Menu</button></a>
+    <a href="#reservation"><button style="padding: 10px 20px; background: #6e2020; color: white; border: none; border-radius: 5px; cursor: pointer;">Make a Reservation</button></a>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#menu">Menu</a>
+    <a href="#reservation">Reservation</a>
+    <a href="#location">Location</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Menu Section -->
+  <section id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-container">
+      <!-- Dish 1 -->
+      <div class="menu-item">
+        <img src="https://robbreport.com/wp-content/uploads/2020/12/manti-dumplings-albi-dc.jpg?w=1000" alt="Dish 1">
+        <h3>Albi Tako</h3>
+        <p>This is a Dubai's famous dish. Ingredients include maida, oil, curd, and stuffing.</p>
+        <p>5000rs</p>
+      </div>
+      <!-- Dish 2 -->
+      <div class="menu-item">
+        <img src="https://i0.wp.com/stanzaliving.wpcomstaging.com/wp-content/uploads/2022/04/f4023-vadodara-rest.jpg?fit=1000%2C702&ssl=1" alt="Dish 2">
+        <h3>Gujarati Dish</h3>
+        <p>Gujarat's famous dish. Ingredients include atta, rice, vegetables, and sweets.</p>
+        <p>2000rs</p>
+      </div>
+      <!-- Dish 3 -->
+      <div class="menu-item">
+        <img src="https://im.idiva.com/content/2019/May/iDiva_AtoZ_Bengali_Food_lead_5cee1bba2e585.png?w=414&h=276&cc=1" alt="Dish 3">
+        <h3>Bengali Dish</h3>
+        <p>Famous Bengali dishes often include onions, tomatoes, ginger, garlic, chilies, coriander leaves, and mustard oil.</p>
+        <p>1000rs</p>
+      </div>
+      <!-- Dish 4 -->
+      <div class="menu-item">
+        <img src="https://blog.swiggy.com/wp-content/uploads/2024/02/Pav-Bhaji-1-1024x538.jpg" alt="Dish 4">
+        <h3>Pav Bhaji</h3>
+        <p>A popular Indian street food made with a spicy vegetable mash served with buttered bread.</p>
+        <p>1500rs</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Section -->
+  <section id="reservation">
+    <h2>Make a Reservation</h2>
+    <form class="reservation-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <input type="tel" placeholder="Your Phone Number" required>
+      <input type="date" required>
+      <input type="time" required>
+      <input type="number" placeholder="Number of Guests" required>
+      <textarea placeholder="Special Requests"></textarea>
+      <button type="submit">Submit Reservation</button>
+    </form>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location">
+    <h2>Our Location</h2>
+    <p>Find us easily! We’re located at kamlapura road , rajasthan.</p>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1dYOUR_LOCATION_ID!2dYOUR_LONGITUDE!3dYOUR_LATITUDE!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zYOUR_LATITUDE!5e0!3m2!1sen!2sus!4vYOUR_TIMESTAMP"
+      width="100%"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <div>
+      <p>"Amazing food and great service! Highly recommend!" - mukesh yadav</p>
+      <p>"The best cafe in town. Love the ambiance!" - vaibhav trivedi</p>
+      <!-- Add more testimonials here -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: 9993337771</p>
+    <p>Email: kamlesh1234@gmail.com</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 KAMLESH Restaurant. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
